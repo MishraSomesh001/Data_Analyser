@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center items-center">
+    <div class="text-3xl flex justify-center p-10">Data Analysis</div>
+    <div class="font-extrabold p-10">1. Summary Statistics</div>
+    {{ summary_stats|safe }}
+    <div class="p-10 font-extrabold">2. Correlation Heatmap</div>
+    <div class=""><img src="/{{ heatmap_path }}" alt="Heatmap"></div>
+    <div class="p-10 font-extrabold">3. Histograms</div>
+    <div class=""><img src="/{{ hist_path }}" alt="Histograms"></div>
+    <div class="p-10 font-extrabold">Actual vs Predicted</div>
+    <div><img src="/{{ plot_path }}" alt="Actual vs Predicted"></div>
+</body>
+</html>
