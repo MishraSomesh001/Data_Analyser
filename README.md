@@ -52,7 +52,7 @@ Ensure you have the following installed:
     ```
 3. Install the required packages:
     ```bash
-    pip install -r requirements.txt
+    pip install Flask pandas matplotlib seaborn torch scikit-learn dask
     ```
 
 ## Usage
@@ -67,7 +67,7 @@ Ensure you have the following installed:
 5. Train the machine learning model and view the results.
 
 ## File Structure
-data-analyzer/
+```data-analyzer/
 ├── app.py
 ├── templates/
 │ ├── index.html
@@ -80,6 +80,8 @@ data-analyzer/
 │ ├── (uploaded files)
 ├── requirements.txt
 └── README.md
+```
+
 
 ## Technologies Used
 
